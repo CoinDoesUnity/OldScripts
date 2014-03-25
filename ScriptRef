@@ -1,0 +1,20 @@
+//Script Created by CoinDoesUnity!
+//Script Made But Not Used!
+//Coded in Java Script
+	import UnityEditor;
+	class QuickHelper extends EditorWindow {
+		var source : Object;
+		@MenuItem("More/ScriptRef")
+		static function Init() {
+			var window : QuickHelper = EditorWindow.GetWindowWithRect(QuickHelper, Rect(0,0,165,100));
+			window.Show();
+		}
+		function OnGUI() {
+			EditorGUILayout.BeginHorizontal();
+			source = EditorGUILayout.ObjectField(source, Object);
+			EditorGUILayout.EndHorizontal();
+			if(GUILayout.Button("Script Reference")) {
+					Help.BrowseURL("https://docs.unity3d.com/Documentation/ScriptReference/");
+				}
+			}
+		}
