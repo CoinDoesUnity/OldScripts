@@ -1,6 +1,5 @@
 //Script Created by CoinDoesUnity!
 //Script Made But Not Used!
-//Coded in Java Script
 	import UnityEditor;
 	class QuickHelper extends EditorWindow {
 		var source : Object;
